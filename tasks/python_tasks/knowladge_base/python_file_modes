@@ -1,0 +1,38 @@
+
+# 📁 Python File Modes Summary
+
+When using the `open()` function in Python, you can specify different modes to read, write, or update files.
+
+---
+
+## 📝 File Modes Table
+
+| Mode | Name               | Description                                                                 |
+|------|--------------------|-----------------------------------------------------------------------------|
+| `"r"`  | Read              | Open file for reading (default). Error if file does not exist.              |
+| `"w"`  | Write             | Open file for writing. Creates file if not exists. **Overwrites** content. |
+| `"a"`  | Append            | Open file for writing. Creates file if not exists. Adds content to the end.|
+| `"x"`  | Create            | Create a new file. Fails if file already exists.                            |
+| `"r+"` | Read + Write      | Open file for reading and writing. File must exist.                         |
+
+---
+
+## ✅ Examples
+
+```python
+# Read a file
+with open("data.txt", "r") as f:
+    content = f.read()
+
+# Write to a file (overwrite)
+with open("output.txt", "w") as f:
+    f.write("Hello, file!")
+
+# Append to a file
+with open("log.txt", "a") as f:
+    f.write("New log entry\n")
+
+# Create new file (error if exists)
+with open("newfile.txt", "x") as f:
+    f.write("New file created.")
+```

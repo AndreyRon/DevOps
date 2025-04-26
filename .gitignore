@@ -1,0 +1,21 @@
+# General
+.venv/
+pycache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+
+# VSCode
+.vscode/
+
+# Pytest
+.pytest_cache/
+
+# Knowledge base
+knowledge/
+
