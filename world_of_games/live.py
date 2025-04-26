@@ -35,4 +35,4 @@ def load_game():
             return result
     except ValueError:
         print("Invalid input. Please enter a valid number from 1 to 3.")
-        return load_game()
+        return load_game(5)
